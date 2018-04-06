@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    double x = 2;
+    self.label.text = [NSString stringWithFormat:@"%.0f", x];
 }
 
 
