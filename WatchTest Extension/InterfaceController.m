@@ -7,6 +7,7 @@
 //
 
 #import "InterfaceController.h"
+@import Foundation;
 @import SHPartner;
 
 @interface InterfaceController ()
