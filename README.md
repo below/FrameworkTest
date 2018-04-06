@@ -1,8 +1,16 @@
 # FrameworkTest
 
-## Update
+## Update & Workaround
 
 This is actually a manifestation of the Swift Bug [SR-2250](https://bugs.swift.org/browse/SR-2250)
+
+As stated there, the bug appears if only bridged classes (like `String`) are used, and not the explicit Foundation classes (i.e. `NSString`). A workaround is to insert a dummy class that explictly uses Foundation classes:
+
+```Swift
+internal class FoundationForcer : NSArray {}
+```
+
+The fix is in the [workaround branch](https://github.com/below/FrameworkTest/blob/be666e59bb9807086b14a3d54aadb5ca73599b9a/SHPartnerBase.swift#L11)
 
 ## Steps to Reproduce
 
