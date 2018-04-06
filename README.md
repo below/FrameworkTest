@@ -1,5 +1,11 @@
 # FrameworkTest
 
+## Update
+
+This is actually a manifestation of the Swift Bug [SR-2250](https://bugs.swift.org/browse/SR-2250)
+
+## Steps to Reproduce
+
 Build the _WatchTest_ Sample.
 
 I am getting the issue
