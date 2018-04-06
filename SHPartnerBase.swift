@@ -8,6 +8,10 @@
 
 import Foundation
 
+internal class FoundationForcer : NSArray {
+}
+
+
 protocol SHPartnerProtocol where Self:NSObject {
 }
 
