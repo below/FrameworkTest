@@ -8,6 +8,8 @@
 
 import Foundation
 
+@objc internal class ForceFoundationClassDoNotUse : NSArray {}
+
 protocol SHPartnerProtocol where Self:NSObject {
 }
 

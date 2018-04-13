@@ -8,10 +8,8 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
-@import SHPartner;
 
 @interface TodayViewController () <NCWidgetProviding>
-@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -19,8 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    SHPartner * partner = [SHPartner new];
-    self.label.text = partner.supportedLanguages.firstObject;
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
