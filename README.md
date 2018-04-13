@@ -1,5 +1,13 @@
 # FrameworkTest
 
+## Lastest Update, New Question: Today Extension
+
+Now my problem is loading the library from a Today Extension. Everything compiles, however, when I link the Framework with the **Required** setting, the Extension crashes on launch. When I set it to **Optional**, it loads but I can not instantiate an object of class `SHPartner`.
+
+The Issue can be found in [this branch](https://github.com/below/FrameworkTest/tree/Widget)
+
+What am I doing wrong?
+
 ## Update & Workaround
 
 This is actually a manifestation of the Swift Bug [SR-2250](https://bugs.swift.org/browse/SR-2250)
@@ -22,9 +30,10 @@ I am getting the issue
 In file included from <module-includes>:1:
 /Users/below/Library/Developer/Xcode/DerivedData/Test-emvjswrpztpgvcbytkvxbfjkbfuw/Build/Products/Debug-watchsimulator/SHPartner.framework/Headers/SHPartner-Swift.h:187:4: error: expected a type
 - (NSArray<NSString *> * _Nonnull)supportedLanguages SWIFT_WARN_UNUSED_RESULT;
-   ^
+^
 1 error generated.
 /Users/below/dev/DTAG/Samples/Test/WatchTest Extension/InterfaceController.m:10:9: fatal error: could not build module 'SHPartner'
 @import SHPartner;
- ~~~~~~~^~~~~~~~~
+~~~~~~~^~~~~~~~~
 2 errors generated.`
+
