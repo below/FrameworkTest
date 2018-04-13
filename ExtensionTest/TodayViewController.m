@@ -8,6 +8,7 @@
 
 #import "TodayViewController.h"
 #import <NotificationCenter/NotificationCenter.h>
+@import SHPartner;
 
 @interface TodayViewController () <NCWidgetProviding>
 
