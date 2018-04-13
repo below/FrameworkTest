@@ -12,9 +12,6 @@
 		CB44E630207566EE00C27497 /* SHPartner_watch.h in Headers */ = {isa = PBXBuildFile; fileRef = CB44E62E207566EE00C27497 /* SHPartner_watch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB44E634207566FC00C27497 /* SHPartnerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB319C4E2074ED010025F676 /* SHPartnerBase.swift */; };
 		CB44E635207566FC00C27497 /* SHPartner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB319C492074EB170025F676 /* SHPartner.swift */; };
-		CB44E6712076034100C27497 /* SHPartner_widget.h in Headers */ = {isa = PBXBuildFile; fileRef = CB44E66F2076034100C27497 /* SHPartner_widget.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CB44E6752076034A00C27497 /* SHPartnerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB319C4E2074ED010025F676 /* SHPartnerBase.swift */; };
-		CB44E6762076034A00C27497 /* SHPartner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB319C492074EB170025F676 /* SHPartner.swift */; };
 		CB52FEC8207409C40076ADEE /* SHPartner.h in Headers */ = {isa = PBXBuildFile; fileRef = CB52FEC6207409C40076ADEE /* SHPartner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,9 +21,6 @@
 		CB44E62C207566EE00C27497 /* SHPartner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHPartner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB44E62E207566EE00C27497 /* SHPartner_watch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPartner_watch.h; sourceTree = "<group>"; };
 		CB44E62F207566EE00C27497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CB44E66D2076034100C27497 /* SHPartner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHPartner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB44E66F2076034100C27497 /* SHPartner_widget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPartner_widget.h; sourceTree = "<group>"; };
-		CB44E6702076034100C27497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB52FEC3207409C40076ADEE /* SHPartner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHPartner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB52FEC6207409C40076ADEE /* SHPartner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHPartner.h; sourceTree = "<group>"; };
 		CB52FEC7207409C40076ADEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -34,13 +28,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		CB44E628207566EE00C27497 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB44E6692076034100C27497 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,21 +53,11 @@
 			path = "SHPartner-watch";
 			sourceTree = "<group>";
 		};
-		CB44E66E2076034100C27497 /* SHPartner-widget */ = {
-			isa = PBXGroup;
-			children = (
-				CB44E66F2076034100C27497 /* SHPartner_widget.h */,
-				CB44E6702076034100C27497 /* Info.plist */,
-			);
-			path = "SHPartner-widget";
-			sourceTree = "<group>";
-		};
 		CB52FEB9207409C40076ADEE = {
 			isa = PBXGroup;
 			children = (
 				CB52FEC5207409C40076ADEE /* SHPartner */,
 				CB44E62D207566EE00C27497 /* SHPartner-watch */,
-				CB44E66E2076034100C27497 /* SHPartner-widget */,
 				CB52FEC4207409C40076ADEE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,7 +67,6 @@
 			children = (
 				CB52FEC3207409C40076ADEE /* SHPartner.framework */,
 				CB44E62C207566EE00C27497 /* SHPartner.framework */,
-				CB44E66D2076034100C27497 /* SHPartner.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,14 +90,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB44E630207566EE00C27497 /* SHPartner_watch.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB44E66A2076034100C27497 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB44E6712076034100C27497 /* SHPartner_widget.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,24 +120,6 @@
 			name = "SHPartner-watch";
 			productName = "SHPartner-watch";
 			productReference = CB44E62C207566EE00C27497 /* SHPartner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CB44E66C2076034100C27497 /* SHPartner-widget */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CB44E6722076034100C27497 /* Build configuration list for PBXNativeTarget "SHPartner-widget" */;
-			buildPhases = (
-				CB44E6682076034100C27497 /* Sources */,
-				CB44E6692076034100C27497 /* Frameworks */,
-				CB44E66A2076034100C27497 /* Headers */,
-				CB44E66B2076034100C27497 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "SHPartner-widget";
-			productName = "SHPartner-widget";
-			productReference = CB44E66D2076034100C27497 /* SHPartner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		CB52FEC2207409C40076ADEE /* SHPartner */ = {
@@ -203,10 +153,6 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
-					CB44E66C2076034100C27497 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
 					CB52FEC2207409C40076ADEE = {
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0920;
@@ -228,20 +174,12 @@
 			targets = (
 				CB52FEC2207409C40076ADEE /* SHPartner */,
 				CB44E62B207566EE00C27497 /* SHPartner-watch */,
-				CB44E66C2076034100C27497 /* SHPartner-widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CB44E62A207566EE00C27497 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB44E66B2076034100C27497 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -264,15 +202,6 @@
 			files = (
 				CB44E634207566FC00C27497 /* SHPartnerBase.swift in Sources */,
 				CB44E635207566FC00C27497 /* SHPartner.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CB44E6682076034100C27497 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CB44E6752076034A00C27497 /* SHPartnerBase.swift in Sources */,
-				CB44E6762076034A00C27497 /* SHPartner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,51 +263,6 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.2;
-			};
-			name = Release;
-		};
-		CB44E6732076034100C27497 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = M3DTZN9V9B;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "SHPartner-widget/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.telekom.SHPartner-widget";
-				PRODUCT_NAME = SHPartner;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CB44E6742076034100C27497 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = M3DTZN9V9B;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "SHPartner-widget/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "de.telekom.SHPartner-widget";
-				PRODUCT_NAME = SHPartner;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -505,6 +389,7 @@
 		CB52FECC207409C40076ADEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +413,7 @@
 		CB52FECD207409C40076ADEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -555,15 +441,6 @@
 			buildConfigurations = (
 				CB44E631207566EE00C27497 /* Debug */,
 				CB44E632207566EE00C27497 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CB44E6722076034100C27497 /* Build configuration list for PBXNativeTarget "SHPartner-widget" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CB44E6732076034100C27497 /* Debug */,
-				CB44E6742076034100C27497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -16,6 +16,9 @@
 
 
 @implementation InterfaceController
+- (void) something {
+    SHPartner * foo;
+}
 @end
 
 

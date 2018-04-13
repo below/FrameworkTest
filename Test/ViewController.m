@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+@import SHPartner;
 
 @interface ViewController ()
 
@@ -16,8 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    double x = 2;
-    self.label.text = [NSString stringWithFormat:@"%.0f", x];
+    SHPartner * partner = [SHPartner new];
+    self.label.text = partner.supportedLanguages.firstObject;
 }
 
 

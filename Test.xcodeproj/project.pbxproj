@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB04C022208093BC00EAD393 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB04C021208093BC00EAD393 /* NotificationCenter.framework */; };
+		CB04C026208093BC00EAD393 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB04C025208093BC00EAD393 /* TodayViewController.m */; };
+		CB04C029208093BC00EAD393 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB04C027208093BC00EAD393 /* MainInterface.storyboard */; };
+		CB04C02E208093BC00EAD393 /* ExtensionTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB04C020208093BC00EAD393 /* ExtensionTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CB2126FB2077A6F300C4CBF6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2126F92077A6F300C4CBF6 /* Interface.storyboard */; };
 		CB2126FD2077A6F300C4CBF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2126FC2077A6F300C4CBF6 /* Assets.xcassets */; };
 		CB2127042077A6F300C4CBF6 /* WatchTest Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB2127032077A6F300C4CBF6 /* WatchTest Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -21,9 +25,18 @@
 		CB44E6932076089000C27497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB44E6922076089000C27497 /* Assets.xcassets */; };
 		CB44E6962076089000C27497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB44E6942076089000C27497 /* LaunchScreen.storyboard */; };
 		CB44E6992076089000C27497 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB44E6982076089000C27497 /* main.m */; };
+		CBE861062080AC4E00D326AF /* SHPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2127232077B40200C4CBF6 /* SHPartner.framework */; };
+		CBEA885A207F53D800856D60 /* SHPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2127232077B40200C4CBF6 /* SHPartner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		CB04C02B208093BC00EAD393 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB44E67E2076089000C27497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB04C01F208093BC00EAD393;
+			remoteInfo = ExtensionTest;
+		};
 		CB2127052077A6F300C4CBF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB44E67E2076089000C27497 /* Project object */;
@@ -52,13 +65,6 @@
 			remoteGlobalIDString = CB44E62C207566EE00C27497;
 			remoteInfo = "SHPartner-watch";
 		};
-		CB2127262077B40200C4CBF6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CB21271C2077B40200C4CBF6 /* SHPartner.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CB44E66D2076034100C27497;
-			remoteInfo = "SHPartner-widget";
-		};
 		CB2127292077B4A400C4CBF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CB21271C2077B40200C4CBF6 /* SHPartner.xcodeproj */;
@@ -69,6 +75,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CB04C02D208093BC00EAD393 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB04C02E208093BC00EAD393 /* ExtensionTest.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB2127172077A6F300C4CBF6 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +121,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CB04C020208093BC00EAD393 /* ExtensionTest.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ExtensionTest.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB04C021208093BC00EAD393 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		CB04C024208093BC00EAD393 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		CB04C025208093BC00EAD393 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		CB04C028208093BC00EAD393 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		CB04C02A208093BC00EAD393 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2126F72077A6F300C4CBF6 /* WatchTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2126FA2077A6F300C4CBF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		CB2126FC2077A6F300C4CBF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -129,6 +152,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CB04C01D208093BC00EAD393 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBE861062080AC4E00D326AF /* SHPartner.framework in Frameworks */,
+				CB04C022208093BC00EAD393 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB2127002077A6F300C4CBF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,12 +173,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBEA885A207F53D800856D60 /* SHPartner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB04C023208093BC00EAD393 /* ExtensionTest */ = {
+			isa = PBXGroup;
+			children = (
+				CB04C024208093BC00EAD393 /* TodayViewController.h */,
+				CB04C025208093BC00EAD393 /* TodayViewController.m */,
+				CB04C027208093BC00EAD393 /* MainInterface.storyboard */,
+				CB04C02A208093BC00EAD393 /* Info.plist */,
+			);
+			path = ExtensionTest;
+			sourceTree = "<group>";
+		};
 		CB2126F82077A6F300C4CBF6 /* WatchTest */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +219,6 @@
 			children = (
 				CB2127232077B40200C4CBF6 /* SHPartner.framework */,
 				CB2127252077B40200C4CBF6 /* SHPartner.framework */,
-				CB2127272077B40200C4CBF6 /* SHPartner.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -183,6 +226,7 @@
 		CB21272E2077B4AC00C4CBF6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB04C021208093BC00EAD393 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -194,6 +238,7 @@
 				CB44E6882076089000C27497 /* Test */,
 				CB2126F82077A6F300C4CBF6 /* WatchTest */,
 				CB2127072077A6F300C4CBF6 /* WatchTest Extension */,
+				CB04C023208093BC00EAD393 /* ExtensionTest */,
 				CB44E6872076089000C27497 /* Products */,
 				CB21272E2077B4AC00C4CBF6 /* Frameworks */,
 			);
@@ -205,6 +250,7 @@
 				CB44E6862076089000C27497 /* Test.app */,
 				CB2126F72077A6F300C4CBF6 /* WatchTest.app */,
 				CB2127032077A6F300C4CBF6 /* WatchTest Extension.appex */,
+				CB04C020208093BC00EAD393 /* ExtensionTest.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,6 +274,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CB04C01F208093BC00EAD393 /* ExtensionTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB04C032208093BC00EAD393 /* Build configuration list for PBXNativeTarget "ExtensionTest" */;
+			buildPhases = (
+				CB04C01C208093BC00EAD393 /* Sources */,
+				CB04C01D208093BC00EAD393 /* Frameworks */,
+				CB04C01E208093BC00EAD393 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExtensionTest;
+			productName = ExtensionTest;
+			productReference = CB04C020208093BC00EAD393 /* ExtensionTest.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		CB2126F62077A6F300C4CBF6 /* WatchTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CB2127182077A6F300C4CBF6 /* Build configuration list for PBXNativeTarget "WatchTest" */;
@@ -272,11 +335,13 @@
 				CB44E6842076089000C27497 /* Resources */,
 				CB44E6B0207608C200C27497 /* Embed Frameworks */,
 				CB44E6D02076093E00C27497 /* Embed Watch Content */,
+				CB04C02D208093BC00EAD393 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				CB2127122077A6F300C4CBF6 /* PBXTargetDependency */,
+				CB04C02C208093BC00EAD393 /* PBXTargetDependency */,
 			);
 			name = Test;
 			productName = Test;
@@ -293,6 +358,10 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Deutsche Telekom AG";
 				TargetAttributes = {
+					CB04C01F208093BC00EAD393 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					CB2126F62077A6F300C4CBF6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -329,6 +398,7 @@
 				CB44E6852076089000C27497 /* Test */,
 				CB2126F62077A6F300C4CBF6 /* WatchTest */,
 				CB2127022077A6F300C4CBF6 /* WatchTest Extension */,
+				CB04C01F208093BC00EAD393 /* ExtensionTest */,
 			);
 		};
 /* End PBXProject section */
@@ -348,16 +418,17 @@
 			remoteRef = CB2127242077B40200C4CBF6 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CB2127272077B40200C4CBF6 /* SHPartner.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SHPartner.framework;
-			remoteRef = CB2127262077B40200C4CBF6 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CB04C01E208093BC00EAD393 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB04C029208093BC00EAD393 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB2126F52077A6F300C4CBF6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -388,6 +459,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CB04C01C208093BC00EAD393 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB04C026208093BC00EAD393 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CB2126FF2077A6F300C4CBF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -410,6 +489,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		CB04C02C208093BC00EAD393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB04C01F208093BC00EAD393 /* ExtensionTest */;
+			targetProxy = CB04C02B208093BC00EAD393 /* PBXContainerItemProxy */;
+		};
 		CB2127062077A6F300C4CBF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = CB2127022077A6F300C4CBF6 /* WatchTest Extension */;
@@ -428,6 +512,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB04C027208093BC00EAD393 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB04C028208093BC00EAD393 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		CB2126F92077A6F300C4CBF6 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -455,6 +547,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		CB04C02F208093BC00EAD393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = ExtensionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.Test.ExtensionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB04C030208093BC00EAD393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = ExtensionTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.telekom.Test.ExtensionTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		CB2127152077A6F300C4CBF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -630,6 +750,7 @@
 		CB44E69D2076089000C27497 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
@@ -644,6 +765,7 @@
 		CB44E69E2076089000C27497 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
@@ -658,6 +780,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CB04C032208093BC00EAD393 /* Build configuration list for PBXNativeTarget "ExtensionTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB04C02F208093BC00EAD393 /* Debug */,
+				CB04C030208093BC00EAD393 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CB2127142077A6F300C4CBF6 /* Build configuration list for PBXNativeTarget "WatchTest Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
