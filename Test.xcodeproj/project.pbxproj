@@ -25,6 +25,7 @@
 		CBE861102080B92300D326AF /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBE8610F2080B92300D326AF /* TodayViewController.m */; };
 		CBE861132080B92300D326AF /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE861112080B92300D326AF /* MainInterface.storyboard */; };
 		CBE861172080B92300D326AF /* ExtensionTest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CBE8610B2080B92300D326AF /* ExtensionTest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CBE861202080DD4B00D326AF /* SHPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2127232077B40200C4CBF6 /* SHPartner.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CBEA885A207F53D800856D60 /* SHPartner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB2127232077B40200C4CBF6 /* SHPartner.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = CBE8610A2080B92300D326AF;
 			remoteInfo = ExtensionTest;
+		};
+		CBE8611C2080DD0F00D326AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB21271C2077B40200C4CBF6 /* SHPartner.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB52FEC2207409C40076ADEE;
+			remoteInfo = SHPartner;
+		};
+		CBE8611E2080DD3100D326AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB21271C2077B40200C4CBF6 /* SHPartner.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CB52FEC2207409C40076ADEE;
+			remoteInfo = SHPartner;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -171,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBE861202080DD4B00D326AF /* SHPartner.framework in Frameworks */,
 				CBE8610C2080B92300D326AF /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,6 +337,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CBE8611D2080DD0F00D326AF /* PBXTargetDependency */,
 				CB2127122077A6F300C4CBF6 /* PBXTargetDependency */,
 				CBE861162080B92300D326AF /* PBXTargetDependency */,
 			);
@@ -340,6 +357,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				CBE8611F2080DD3100D326AF /* PBXTargetDependency */,
 			);
 			name = ExtensionTest;
 			productName = ExtensionTest;
@@ -506,6 +524,16 @@
 			isa = PBXTargetDependency;
 			target = CBE8610A2080B92300D326AF /* ExtensionTest */;
 			targetProxy = CBE861152080B92300D326AF /* PBXContainerItemProxy */;
+		};
+		CBE8611D2080DD0F00D326AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SHPartner;
+			targetProxy = CBE8611C2080DD0F00D326AF /* PBXContainerItemProxy */;
+		};
+		CBE8611F2080DD3100D326AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SHPartner;
+			targetProxy = CBE8611E2080DD3100D326AF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -750,6 +778,7 @@
 		CBE861192080B92300D326AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				INFOPLIST_FILE = ExtensionTest/Info.plist;
@@ -764,6 +793,7 @@
 		CBE8611A2080B92300D326AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3DTZN9V9B;
 				INFOPLIST_FILE = ExtensionTest/Info.plist;
