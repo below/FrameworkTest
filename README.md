@@ -2,7 +2,7 @@
 
 ## Lastest Update, New Question: Today Extension
 
-Now my problem is loading the library from a Today Extension. Everything compiles, however, when I link the Framework with the **Required** setting, the Extension crashes on launch. When I set it to **Optional**, it loads but I can not instantiate an object of class `SHPartner`.
+Now my problem is loading the library from a Today Extension. Everything compiles, however, when I link the Framework with the **Required** setting, the Extension crashes on launch. When I set it to **Optional**, it loads but I can not [instantiate an object](https://github.com/below/FrameworkTest/blob/077b6595bea6ee9607bfaf5b9e8792475ed7b88e/ExtensionTest/TodayViewController.m#L38) of class `SHPartner`.
 
 What am I doing wrong?
 
