@@ -1,5 +1,11 @@
 # FrameworkTest
 
+## Lastest Update, New Question: Today Extension
+
+Now my problem is loading the library from a Today Extension. Everything compiles, however, when I link the Framework with the **Required** setting, the Extension crashes on launch. When I set it to **Optional**, it loads but I can not instantiate an object of class `SHPartner`.
+
+What am I doing wrong?
+
 ## Update & Workaround
 
 This is actually a manifestation of the Swift Bug [SR-2250](https://bugs.swift.org/browse/SR-2250)

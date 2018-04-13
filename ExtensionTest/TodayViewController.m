@@ -11,6 +11,7 @@
 @import SHPartner;
 
 @interface TodayViewController () <NCWidgetProviding>
+@property (weak, nonatomic) IBOutlet UILabel *label;
 
 @end
 
@@ -18,7 +19,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    NSBundle * bundle = [NSBundle mainBundle];
+    NSString * path = bundle.executablePath;
+    NSFileManager * fm = [NSFileManager defaultManager];
+    NSError * error = nil;
+    NSDictionary * attributes = [fm attributesOfItemAtPath:path error:&error];
+    if (error != nil) {
+        self.label.text = error.localizedDescription;
+    }
+    else {
+        NSString * info = @"Not found";
+        NSDate * modificationDate = attributes.fileModificationDate;
+        NSDateFormatter * formatter = [[NSDateFormatter alloc] init];
+        formatter.dateStyle = NSDateFormatterShortStyle;
+        formatter.timeStyle = NSDateFormatterLongStyle;
+        formatter.doesRelativeDateFormatting = YES;
+        
+        SHPartner * partner = [SHPartner new];
+        if (partner != nil) {
+            info = @"Found!";
+        }
+        self.label.text = [NSString stringWithFormat:@"%@\n%@", info, [formatter stringFromDate:modificationDate]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
